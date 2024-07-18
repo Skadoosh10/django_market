@@ -1,0 +1,33 @@
+{% extends "core/base.html" %}
+
+
+{% block title %}New İtem{% endblock title %}
+
+{% block content %}
+
+<form method="POST" action="." enctype="multipart/form-data">
+{% csrf_token %}
+
+{{form.as_p}}
+
+
+
+
+<button class= "mt-6 px-8 py-4 text-lg text-white rounded-xl  bg-teal-500 ">Submit</button>
+
+</form>
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
